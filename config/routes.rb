@@ -6,7 +6,7 @@ Rails.application.routes.draw do
 
   get 'main/contact'
 
-  get 'main/product'
+  get 'main/about'
 
 
   root :to => redirect('/main/home')

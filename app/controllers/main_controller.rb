@@ -8,6 +8,6 @@ class MainController < ApplicationController
   def contact
   end
 
-  def product
+  def about
   end
 end

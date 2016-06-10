@@ -16,7 +16,7 @@ class MainControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
 
-  test "should get product" do
+  test "should get about" do
     get main_product_url
     assert_response :success
   end
