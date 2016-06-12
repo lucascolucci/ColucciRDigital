@@ -17,7 +17,12 @@ class MainControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should get about" do
-    get main_product_url
+    get main_about_url
+    assert_response :success
+  end
+
+  test "should get profile" do
+    get main_profile_url
     assert_response :success
   end
 
