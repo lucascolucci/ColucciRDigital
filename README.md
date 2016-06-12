@@ -1,24 +1,23 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Welcome to ColucciRD webpage!
+To use it, make sure you have rails installed in your pc.
 
-Things you may want to cover:
+1. Download the repository (using git clone or download button)
+2. Open the terminal and run `bundle install`
+3. run `rake db:create`
+4. run `rake tb:migrate`
+5. run `rails s`
 
-* Ruby version
+If you are interested on runnning the tests, you will need to install
+QT. For that follow the link below:
+https://github.com/thoughtbot/capybara-webkit/wiki/Installing-Qt-and-compiling-capybara-webkit
 
-* System dependencies
+Testing:
+1. run `rake test`
+2. run `rake spec:views`
 
-* Configuration
+This application is deployed on Heroku:
+https://coluccirdigital.herokuapp.com/
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Thanks!
