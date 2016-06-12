@@ -1,5 +1,11 @@
 Rails.application.routes.draw do
 
+  get "/users/:id" => redirect("/users/new"), constraints: { id: /[1-9]*/ }
+
+  resources :users
+
+
+
   get 'main/home'
 
   get 'main/price'

@@ -96,5 +96,4 @@ RSpec.configure do |config|
   end
 =end
   Capybara.javascript_driver = :webkit
-
 end

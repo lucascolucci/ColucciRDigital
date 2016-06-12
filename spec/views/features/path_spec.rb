@@ -3,10 +3,11 @@ require 'rails_helper'
 describe 'retains_path' do
   before do
     visit main_home_path
-    visit main_contact_path
+    click_link "Contact"
     fill_in "email", :with => "a@gmail.com"
     click_button "submit"
-    puts page.body
+    click_link "a@gmail.com"
+
   end
   it 'displays user path correctly', :js => true do
     page.should have_content "home -> contact -> profile"

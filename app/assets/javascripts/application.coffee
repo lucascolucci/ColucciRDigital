@@ -8,36 +8,42 @@ sleep = (ms) ->
 
 storePage = () ->
   if window.location.href.split("/")[4] == "home"
-      if !sessionStorage.pages?
-        sessionStorage.pages = "home"
-      else
-        sessionStorage.pages = sessionStorage.pages + " -> home"
+    if !sessionStorage.pages?
+      sessionStorage.pages = "home"
+    else
+      saveIfNotReloaded "home"
 
   if window.location.href.split("/")[4] == "about"
     if !sessionStorage.pages?
       sessionStorage.pages = "about"
     else
-      sessionStorage.pages = sessionStorage.pages + " -> about"
+      saveIfNotReloaded "about"
 
-  if window.location.href.split("/")[4] == "contact"
+  if window.location.href.split("/")[4] == "new"
     if !sessionStorage.pages?
       sessionStorage.pages = "contact"
     else
-      sessionStorage.pages = sessionStorage.pages + " -> contact"
+      saveIfNotReloaded "contact"
 
   if window.location.href.split("/")[4] == "price"
     if !sessionStorage.pages?
       sessionStorage.pages = "price"
     else
-      sessionStorage.pages = sessionStorage.pages + " -> price"
+      saveIfNotReloaded "price"
 
   if window.location.href.split("/")[4] == "profile"
     if !sessionStorage.pages?
       sessionStorage.pages = "profile"
     else
-      sessionStorage.pages = sessionStorage.pages + " -> profile"
+      saveIfNotReloaded "profile"
     document.getElementById("path").innerHTML = sessionStorage.pages
 
+
+saveIfNotReloaded = (string) ->
+  array = sessionStorage.pages.split(" -> ")
+  equal = array[array.length - 1] == string
+  if !equal
+    sessionStorage.pages = sessionStorage.pages + " -> " + string
 
 showProfile = (email) ->
   profileButton =  document.getElementById("profile")
@@ -53,7 +59,7 @@ runFunctions = () ->
   storePage()
   if sessionStorage.email?
     showProfile(sessionStorage.email)
-    if window.location.href.split("/")[4] == "contact"
+    if window.location.href.split("/")[4] == "new"
       hideEmailInput()
 
 window.onload = runFunctions
