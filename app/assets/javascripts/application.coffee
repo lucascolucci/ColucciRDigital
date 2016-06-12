@@ -74,6 +74,8 @@ window.onload = runFunctions
     sessionStorage.email = email
     showProfile(email)
     hideEmailInput()
+    window.location.href = "/main/profile";
+
   else
     result.innerHTML = email + " is not valid :("
     result.setAttribute("style", "color: red")
