@@ -19,7 +19,7 @@ storePage = () ->
     else
       saveIfNotReloaded "about"
 
-  if window.location.href.split("/")[4] == "new"
+  if window.location.href.split("/")[4] == "contact"
     if !sessionStorage.pages?
       sessionStorage.pages = "contact"
     else
@@ -59,7 +59,7 @@ runFunctions = () ->
   storePage()
   if sessionStorage.email?
     showProfile(sessionStorage.email)
-    if window.location.href.split("/")[4] == "new"
+    if window.location.href.split("/")[4] == "contact"
       hideEmailInput()
 
 window.onload = runFunctions

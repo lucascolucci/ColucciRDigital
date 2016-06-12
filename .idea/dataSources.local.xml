@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="Rails ColucciRDigtal: production" uuid="6b2dc115-f1d0-4bab-9615-1590f6eb05b8">
+      <first-sync>true</first-sync>
+      <user-name>ColucciRDigtal</user-name>
+      <user-password>df96df8fdf97df8adfefdfe4dffcdff1df8ddfe9dfe5dfe6dfffdfe9dfe9dfe3dff8dfeedfe3dfeddffedfebdfe6dff5dfeedfebdffedfebdfe8dfebdff9dfefdff5dffadfebdff9dff9dffddfe5dff8dfeedf8ddff7df8adf8fdf94</user-password>
+    </data-source>
+    <data-source name="Rails ColucciRDigtal: development" uuid="eb8aa1a8-3c60-43b3-bb3c-8ae956f6282b">
+      <first-sync>true</first-sync>
+      <user-name>root</user-name>
+    </data-source>
+    <data-source name="Rails ColucciRDigtal: test" uuid="c4352820-b087-4c54-89f0-ceb135b3f92d">
+      <first-sync>true</first-sync>
+      <user-name>root</user-name>
+    </data-source>
+  </component>
+</project>
